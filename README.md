@@ -1,4 +1,4 @@
-# 陈奕浩作业
+#刘宣汐作业
 
 ## 播放截图
 
@@ -6,7 +6,6 @@
 
 ## bag的属性
 
-cyh@LAPTOP-C6VQVV9I:/mnt/c/Users/chenyhao/Desktop/cyh$ rosbag info jiantu2.
 bag 
 path:        jiantu2.bag
 version:     2.0
@@ -25,11 +24,9 @@ topics:      /driver/encoder    4758 msgs    : nav_msgs/Odometry
              /driver/imu       28469 msgs    : sensor_msgs/Imu          
              /driver/mag       28469 msgs    : sensor_msgs/MagneticField
              /driver/scan       1017 msgs    : sensor_msgs/LaserScan
-cyh@LAPTOP-C6VQVV9I:/mnt/c/Users/chenyhao/Desktop/cyh$ 
 
 ### ROS话题内容细节
 
-cyh@LAPTOP-C6VQVV9I:/mnt/c/Users/chenyhao/Desktop/cyh$ rosmsg show nav_msgs/Odometry
 sgs/Imu
 rosmsg show sensor_msgs/MagneticField
 rosmsg show sensor_msgs/LaserScanstd_msgs/Header header
@@ -60,8 +57,7 @@ geometry_msgs/TwistWithCovariance twist
       float64 y
       float64 z
   float64[36] covariance
-
-cyh@LAPTOP-C6VQVV9I:/mnt/c/Users/chenyhao/Desktop/cyh$ rosmsg show sensor_msgs/Imu
+  
 std_msgs/Header header
   uint32 seq
   time stamp
@@ -83,7 +79,6 @@ geometry_msgs/Vector3 linear_acceleration
   float64 z
 float64[9] linear_acceleration_covariance
 
-cyh@LAPTOP-C6VQVV9I:/mnt/c/Users/chenyhao/Desktop/cyh$ rosmsg show sensor_msgs/MagneticField
 std_msgs/Header header
   uint32 seq
   time stamp
@@ -94,7 +89,6 @@ geometry_msgs/Vector3 magnetic_field
   float64 z
 float64[9] magnetic_field_covariance
 
-cyh@LAPTOP-C6VQVV9I:/mnt/c/Users/chenyhao/Desktop/cyh$ rosmsg show sensor_msgs/LaserScan
 std_msgs/Header header
   uint32 seq
   time stamp
